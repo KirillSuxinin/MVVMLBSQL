@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfMVVM_MySql_Login.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfMVVM_MySql_Login"
+        xmlns:z="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:oxy="http://oxyplot.org/wpf"
+        xmlns:mv="clr-namespace:WpfMVVM_MySql_Login.ViewModel"
+
+        mc:Ignorable="d"
+        Title="Login MySql" Height="150" Width="450">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0 4 0 0" Text="Enter Login -"/>
+        <TextBox Text="{Binding Login}" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="70 5 5 0"/>
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0 50 0 0" Text="Enter Password -"/>
+        <TextBox Text="{Binding Password}" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="95 50 5 0">
+
+        </TextBox>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Bottom" Content="Exit" Width="50" Margin="5" Command="{Binding ExitApp}"/>
+        <Button HorizontalAlignment="Right" VerticalAlignment="Bottom" Content="Login" Width="50" Margin="5" Command="{Binding LoginApp}"/>
+    </Grid>
+</Window>
